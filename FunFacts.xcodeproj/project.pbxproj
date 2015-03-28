@@ -13,6 +13,8 @@
 		214D42D71AB7D17600550769 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 214D42D61AB7D17600550769 /* Images.xcassets */; };
 		214D42DA1AB7D17600550769 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 214D42D81AB7D17600550769 /* LaunchScreen.xib */; };
 		214D42E61AB7D17600550769 /* FunFactsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 214D42E51AB7D17600550769 /* FunFactsTests.swift */; };
+		21933DB91ABF6A8100522A5E /* FactBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21933DB81ABF6A8100522A5E /* FactBook.swift */; };
+		21933DBD1ABF80BA00522A5E /* ColorWheel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21933DBC1ABF80BA00522A5E /* ColorWheel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,9 @@
 		214D42DF1AB7D17600550769 /* FunFactsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FunFactsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		214D42E41AB7D17600550769 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		214D42E51AB7D17600550769 /* FunFactsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunFactsTests.swift; sourceTree = "<group>"; };
+		21933DB81ABF6A8100522A5E /* FactBook.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FactBook.swift; sourceTree = "<group>"; };
+		21933DBB1ABF703700522A5E /* Scratchpad.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Scratchpad.playground; sourceTree = "<group>"; };
+		21933DBC1ABF80BA00522A5E /* ColorWheel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorWheel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +65,7 @@
 			isa = PBXGroup;
 			children = (
 				214D42CC1AB7D17600550769 /* FunFacts */,
+				21933DBA1ABF700C00522A5E /* Playgrounds */,
 				214D42E21AB7D17600550769 /* FunFactsTests */,
 				214D42CB1AB7D17600550769 /* Products */,
 			);
@@ -78,6 +84,8 @@
 			isa = PBXGroup;
 			children = (
 				214D42CF1AB7D17600550769 /* AppDelegate.swift */,
+				21933DBC1ABF80BA00522A5E /* ColorWheel.swift */,
+				21933DB81ABF6A8100522A5E /* FactBook.swift */,
 				214D42D11AB7D17600550769 /* ViewController.swift */,
 				214D42D31AB7D17600550769 /* Main.storyboard */,
 				214D42D61AB7D17600550769 /* Images.xcassets */,
@@ -110,6 +118,14 @@
 				214D42E41AB7D17600550769 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		21933DBA1ABF700C00522A5E /* Playgrounds */ = {
+			isa = PBXGroup;
+			children = (
+				21933DBB1ABF703700522A5E /* Scratchpad.playground */,
+			);
+			name = Playgrounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -161,6 +177,7 @@
 				TargetAttributes = {
 					214D42C91AB7D17600550769 = {
 						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = 4C7M8GZHE6;
 					};
 					214D42DE1AB7D17600550769 = {
 						CreatedOnToolsVersion = 6.2;
@@ -212,8 +229,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				21933DB91ABF6A8100522A5E /* FactBook.swift in Sources */,
 				214D42D21AB7D17600550769 /* ViewController.swift in Sources */,
 				214D42D01AB7D17600550769 /* AppDelegate.swift in Sources */,
+				21933DBD1ABF80BA00522A5E /* ColorWheel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -336,9 +355,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = FunFacts/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -346,9 +370,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = FunFacts/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -405,6 +434,7 @@
 				214D42EB1AB7D17600550769 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		214D42EC1AB7D17600550769 /* Build configuration list for PBXNativeTarget "FunFactsTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +443,7 @@
 				214D42EE1AB7D17600550769 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
