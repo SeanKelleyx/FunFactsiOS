@@ -14,3 +14,11 @@ var redColor = UIColor(red: 223/255.0, green: 86/255.0, blue: 94/255.0, alpha: 1
 
 
 let colorsArray = [redColor]
+
+let url = NSURL(string: "http://www.stackoverflow.com")
+
+let task = NSURLSession.sharedSession().dataTaskWithURL(url!) {(data, response, error) in
+    println(NSString(data: data, encoding: NSUTF8StringEncoding))
+}
+
+task.resume()
