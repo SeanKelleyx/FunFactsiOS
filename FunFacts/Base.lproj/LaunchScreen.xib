@@ -11,23 +11,27 @@
             <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Did you know?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cvi-nV-VAk">
-                    <rect key="frame" x="172" y="225" width="137" height="26"/>
-                    <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="22"/>
-                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Launcher" translatesAutoresizingMaskIntoConstraints="NO" id="MTF-n8-SHB">
+                    <rect key="frame" x="180" y="180" width="300" height="300"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="300" id="cY0-aU-bbd"/>
+                        <constraint firstAttribute="height" constant="300" id="dRl-mg-pFp"/>
+                    </constraints>
+                </imageView>
             </subviews>
-            <color key="backgroundColor" red="0.95294117647058818" green="0.92941176470588238" blue="0.88235294117647056" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color key="backgroundColor" red="0.51372549019607838" green="0.5490196078431373" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstAttribute="centerX" secondItem="cvi-nV-VAk" secondAttribute="centerX" constant="-0.5" id="ptB-6U-0Ct"/>
-                <constraint firstAttribute="centerY" secondItem="cvi-nV-VAk" secondAttribute="centerY" constant="2.5" id="rmz-ef-7fO"/>
+                <constraint firstAttribute="bottom" secondItem="MTF-n8-SHB" secondAttribute="bottom" id="ARt-b5-lHQ"/>
+                <constraint firstAttribute="trailing" secondItem="MTF-n8-SHB" secondAttribute="trailing" id="PXx-mq-ZSk"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <point key="canvasLocation" x="548" y="455"/>
         </view>
     </objects>
+    <resources>
+        <image name="Launcher" width="600" height="600"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

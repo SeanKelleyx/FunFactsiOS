@@ -41,7 +41,6 @@
 		214D42E51AB7D17600550769 /* FunFactsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunFactsTests.swift; sourceTree = "<group>"; };
 		214E16391ACF9D88006101BA /* MasterDataObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterDataObject.swift; sourceTree = "<group>"; };
 		21933DB81ABF6A8100522A5E /* FactBook.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FactBook.swift; sourceTree = "<group>"; };
-		21933DBB1ABF703700522A5E /* Scratchpad.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Scratchpad.playground; sourceTree = "<group>"; };
 		21933DBC1ABF80BA00522A5E /* ColorWheel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorWheel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -67,7 +66,6 @@
 			isa = PBXGroup;
 			children = (
 				214D42CC1AB7D17600550769 /* FunFacts */,
-				21933DBA1ABF700C00522A5E /* Playgrounds */,
 				214D42E21AB7D17600550769 /* FunFactsTests */,
 				214D42CB1AB7D17600550769 /* Products */,
 			);
@@ -121,14 +119,6 @@
 				214D42E41AB7D17600550769 /* Info.plist */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		21933DBA1ABF700C00522A5E /* Playgrounds */ = {
-			isa = PBXGroup;
-			children = (
-				21933DBB1ABF703700522A5E /* Scratchpad.playground */,
-			);
-			name = Playgrounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -188,7 +178,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 214D42C51AB7D17600550769 /* Build configuration list for PBXProject "FunFacts" */;
+			buildConfigurationList = 214D42C51AB7D17600550769 /* Build configuration list for PBXProject "Number Facts" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -422,7 +412,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		214D42C51AB7D17600550769 /* Build configuration list for PBXProject "FunFacts" */ = {
+		214D42C51AB7D17600550769 /* Build configuration list for PBXProject "Number Facts" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				214D42E71AB7D17600550769 /* Debug */,

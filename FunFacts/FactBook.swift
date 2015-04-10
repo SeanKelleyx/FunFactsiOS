@@ -16,7 +16,12 @@ class FactBook {
     }
     
     func randomFact() -> String{
-        let returnFact = fact
+        var returnFact : String
+        if fact == "" {
+            returnFact = "0 is the number of facts we can get you without a network connection!"
+        }else{
+            returnFact = fact
+        }
         updateFact()
         return returnFact
     }
@@ -24,9 +29,15 @@ class FactBook {
     func updateFact(){
         let url = NSURL(string: "http://numbersapi.com/random/trivia")
         let task = NSURLSession.sharedSession().dataTaskWithURL(url!) {(data, response, error) in
-            dispatch_async(dispatch_get_main_queue(), { () -> Void in
-                self.fact = NSString(data: data, encoding: NSUTF8StringEncoding)!
-            })
+            if error == nil {
+                dispatch_async(dispatch_get_main_queue(), { () -> Void in
+                    self.fact = NSString(data: data, encoding: NSUTF8StringEncoding)!
+                })
+            }else{
+                dispatch_async(dispatch_get_main_queue(), { () -> Void in
+                    self.fact = ""
+                })
+            }
         }
         task.resume()
     }
